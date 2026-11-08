@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Project 01: Automated Bookkeeping System built with Microsoft Excel and VBA.">
+<title>Automated Bookkeeping System | Project 01</title>
+<style>
+:root{--navy:#17283f;--navy2:#243b57;--ivory:#f8f6f0;--beige:#e8dfd0;--ink:#263342;--muted:#697583;--line:#e6e0d6;--gold:#b49b75}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--ivory);color:var(--ink);font:16px/1.65 Arial,Helvetica,sans-serif}a{color:inherit;text-decoration:none}.wrap{width:min(1050px,calc(100% - 40px));margin:auto}
+header{background:var(--navy);color:white;padding:17px 0}.top{display:flex;justify-content:space-between;align-items:center;gap:18px}.brand{font-weight:800;letter-spacing:.12em;font-size:.85rem}.back{color:#e8dfd0;font-size:.9rem}
+.hero{padding:72px 0 62px;background:linear-gradient(120deg,#f8f6f0 55%,#eee7da)}.eyebrow{color:#8b7658;text-transform:uppercase;letter-spacing:.17em;font-size:.74rem;font-weight:bold}.hero h1{font-size:clamp(2.3rem,5vw,4rem);line-height:1.1;letter-spacing:-.035em;color:var(--navy);max-width:800px;margin:14px 0}.hero p{max-width:760px;color:#536171;font-size:1.06rem}.meta{display:flex;flex-wrap:wrap;gap:9px;margin-top:22px}.tag{background:#e9e1d4;color:#5b4e3d;padding:6px 11px;border-radius:20px;font-size:.8rem;font-weight:bold}
+section{padding:58px 0}.head{margin-bottom:26px}.head h2{color:var(--navy);font-size:2rem;margin:7px 0}.head p{color:var(--muted);margin:0}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.card{background:white;border:1px solid var(--line);border-radius:8px;padding:23px}.card h3{color:var(--navy);margin:0 0 8px}.card p{color:var(--muted);margin:0}.feature-number{font-size:1.55rem;color:var(--gold);font-weight:800;margin-bottom:8px}
+.dark-section{background:#f0ece4}.shots{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}.shot{background:white;border:1px solid var(--line);border-radius:8px;overflow:hidden}.shot img{display:block;width:100%;aspect-ratio:16/10;object-fit:cover;background:#e8e3da}.shot figcaption{padding:13px 16px;color:var(--navy);font-weight:bold}
+.files{display:grid;grid-template-columns:repeat(3,1fr);gap:15px}.file{background:white;border:1px solid var(--line);border-radius:8px;padding:22px}.file .type{font-size:.72rem;letter-spacing:.12em;color:#8b7658;font-weight:bold;text-transform:uppercase}.file h3{color:var(--navy);font-size:1.05rem;overflow-wrap:anywhere}.file p{color:var(--muted);font-size:.9rem}.download{display:inline-block;background:var(--navy);color:white;padding:9px 14px;border-radius:4px;font-size:.85rem;font-weight:bold;margin-top:7px}
+.note{background:#fff;border-left:4px solid var(--gold);padding:18px 20px;color:var(--muted);border-radius:4px}.workflow{counter-reset:step;display:grid;grid-template-columns:repeat(4,1fr);gap:13px}.step{background:white;border:1px solid var(--line);border-radius:7px;padding:18px}.step:before{counter-increment:step;content:"0" counter(step);display:block;color:var(--gold);font-weight:800;font-size:1.2rem;margin-bottom:8px}.step strong{color:var(--navy)}
+footer{background:var(--navy);color:#dce2e9;padding:25px 0;text-align:center;font-size:.85rem}
+@media(max-width:760px){.grid,.files{grid-template-columns:1fr 1fr}.workflow{grid-template-columns:1fr 1fr}.shots{grid-template-columns:1fr}.hero{padding:55px 0}}
+@media(max-width:500px){.wrap{width:calc(100% - 28px)}.grid,.files,.workflow{grid-template-columns:1fr}.top{align-items:flex-start;flex-direction:column}}
+</style>
+</head>
+<body>
+<header><div class="wrap top"><a class="brand" href="../">ACCOUNTING VA PORTFOLIO</a><a class="back" href="../">← Back to main portfolio</a></div></header>
+<main>
+<section class="hero"><div class="wrap">
+<div class="eyebrow">Portfolio Project 01 · Excel Automation</div>
+<h1>Automated Bookkeeping System</h1>
+<p>A sample bookkeeping solution for a fictional trading business, designed to organize accounting entries and generate essential financial reports through Microsoft Excel and VBA automation.</p>
+<div class="meta"><span class="tag">Microsoft Excel</span><span class="tag">VBA Macro</span><span class="tag">PHP Currency</span><span class="tag">Full Year 2026</span><span class="tag">Advanced Demo</span></div>
+</div></section>
+
+<section><div class="wrap"><div class="head"><div class="eyebrow">Project Overview</div><h2>About the project</h2><p>Built as a practical demonstration of bookkeeping workflow, spreadsheet design, and automated financial reporting.</p></div>
+<div class="grid">
+<article class="card"><div class="feature-number">01</div><h3>Journal Recording</h3><p>Organizes sample business transactions using a structured general journal and chart of accounts.</p></article>
+<article class="card"><div class="feature-number">02</div><h3>Automated Reports</h3><p>Refreshes the general ledger, trial balance, income statement, and balance sheet using workbook formulas and VBA.</p></article>
+<article class="card"><div class="feature-number">03</div><h3>Financial Dashboard</h3><p>Summarizes key financial figures and visual trends to make the sample business results easier to review.</p></article>
+</div></div></section>
+
+<section class="dark-section"><div class="wrap"><div class="head"><div class="eyebrow">Screenshots</div><h2>Workbook preview</h2><p>Selected views from the Excel bookkeeping workbook.</p></div>
+<div class="shots">
+<figure class="shot"><img src="./Screenshots/Dashboard.png" alt="Bookkeeping dashboard screenshot"><figcaption>Dashboard</figcaption></figure>
+<figure class="shot"><img src="./Screenshots/Income-Statement.png" alt="Income statement screenshot"><figcaption>Income Statement</figcaption></figure>
+<figure class="shot"><img src="./Screenshots/Balance-Sheet.png" alt="Balance sheet screenshot"><figcaption>Balance Sheet</figcaption></figure>
+<figure class="shot"><img src="./Screenshots/Trial-Balance.png" alt="Trial balance screenshot"><figcaption>Trial Balance</figcaption></figure>
+</div>
+<p class="note" style="margin-top:18px">If your screenshot filenames are different, update the four image paths above to match the exact names in your Screenshots folder. Keep the folder name and capitalization consistent.</p>
+</div></section>
+
+<section><div class="wrap"><div class="head"><div class="eyebrow">Project Files</div><h2>Downloads</h2><p>Access the workbook, VBA source module, and sample financial reports.</p></div>
+<div class="files">
+<article class="file"><div class="type">Excel Macro Workbook</div><h3>ABC_Trading_Bookkeeping_2026.xlsm</h3><p>Sample bookkeeping workbook with dashboard and financial report sheets.</p><a class="download" href="./ABC_Trading_Bookkeeping_2026.xlsm" download>Download Workbook</a></article>
+<article class="file"><div class="type">VBA Source</div><h3>ABC_Trading_Automation.bas</h3><p>VBA module for refreshing bookkeeping reports and exporting reports to PDF.</p><a class="download" href="./ABC_Trading_Automation.bas" download>Download VBA Module</a></article>
+<article class="file"><div class="type">PDF Report</div><h3>Financial-Reports.pdf</h3><p>Sample trial balance, income statement, and balance sheet export.</p><a class="download" href="./Financial-Reports.pdf" target="_blank" rel="noopener">View PDF Report</a></article>
+</div>
+<p class="note" style="margin-top:18px">Important: These download links assume the filenames shown above. If the uploaded files have different names, edit each link's filename to match the exact GitHub file name.</p>
+</div></section>
+
+<section class="dark-section"><div class="wrap"><div class="head"><div class="eyebrow">Workflow</div><h2>How the workbook is organized</h2></div>
+<div class="workflow">
+<div class="step"><strong>Record transactions</strong><br><span class="muted">Enter sample transactions in the General Journal.</span></div>
+<div class="step"><strong>Classify accounts</strong><br><span class="muted">Use the Chart of Accounts to organize entries.</span></div>
+<div class="step"><strong>Refresh reports</strong><br><span class="muted">Run the workbook automation to update reports.</span></div>
+<div class="step"><strong>Review results</strong><br><span class="muted">Check the trial balance and financial statements.</span></div>
+</div>
+</div></section>
+
+<section><div class="wrap"><div class="head"><div class="eyebrow">Disclaimer</div><h2>Demonstration project</h2></div><p class="note">ABC Trading Services is a fictional company created for portfolio demonstration. All transactions and financial figures are sample data and do not represent an actual client or business.</p></div></section>
+</main>
+<footer><div class="wrap">© 2026 Accounting VA Portfolio · Project 01</div></footer>
+</body></html>
